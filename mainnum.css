@@ -1,0 +1,546 @@
+*{
+  box-sizing: border-box;
+}
+body,html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url(bkg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  background-image: url(bkg.jpg);
+  animation: 1s forwards num;
+  transform: scale(0);
+}
+.back {
+  background-color:white; 
+  color: rgb(179, 74, 167);
+  padding: 5px;
+  margin-right: 5px;
+  border: 4px solid violet !important;
+}
+.back:hover {
+  background-color: purple;
+  color: white;
+}
+@keyframes num {
+  0%{transform: scale(1)}
+  50%{transform: scale(1.5)}
+  100%{transform: scale(1)}
+}
+.container {
+  padding: 0;
+  width: 900px;
+  height: 520px;
+  margin: 50px 10px;
+  background-color: violet;
+  position: relative;
+  border-top: 10px solid violet;
+}
+.verticalline {
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 800px;
+  background-color: purple;
+  width: 3px;
+}
+.display-result {
+  position: absolute;
+  left: 800px;
+  bottom: 25px;
+  width: 110px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: rebeccapurple;
+  font-size: 30px;
+}
+.startBtn {
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  background-color: lavender;
+  color: purple;
+  border: 5px solid magenta;
+  border-radius: 2px;
+  top: 220px;
+  left: 320px;
+  cursor: pointer;
+  user-select: none;
+}
+.pauseBtn {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  background-color: lavender;
+  color: purple;
+  border: 5px solid magenta;
+  border-radius: 2px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.typing-line {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  left: 0;
+  background-color: lavender;
+}
+.main-input {
+  background-color: lavender;
+  width: 100%;
+  border: 6px solid magenta;
+  color: purple;
+  height: 30px;
+  font-size: 18px;
+  outline: none;
+}
+span {
+  position: absolute;
+  background-color: Salmon;
+  left: 0;
+  padding: 2px 4px;
+  color: purple;
+  border: 2px solid purple;
+  border-radius: 3px;
+}
+.danger {
+  background-color: blueviolet;
+  color: white;
+}
+@media (min-width:320px) {
+  .container{
+    width: 310px;
+    height: 300px;
+    margin: 50px auto;
+    font-size: 20px;
+  }
+  .verticalline {
+    height: 290px;
+    left: 245px;
+  }
+  .display-result{
+    bottom: 5px;
+    left: 230px;
+  }
+  .startBtn {
+    top: 120px;
+    left: 50px;
+    width: 135px;
+    height: 45px;
+  }
+  .line-1 {
+    top: 0px;
+  }
+  .line-2 {
+    top: 40px;
+  }
+  .line-3 {
+    top: 80px;
+  }
+  .line-3 {
+    top: 120px;
+  }
+  .line-5 {
+    top: 160px;
+  }
+  .line-6 {
+    top: 200px;
+    visibility: hidden;
+    display: none;
+  }
+  .line-7 {
+    top: 240px;
+    visibility: hidden;
+      display: none;
+  }
+  .line-8 {
+    top: 280px;
+    visibility: hidden;
+      display: none;
+  }
+  .line-9 {
+    top: 320px;
+    visibility: hidden;
+      display: none;
+  }
+  .line-10 {
+    top: 360px;
+      visibility: hidden;
+        display: none;
+  }
+  .line-11 {
+    top: 400px;
+    visibility: hidden;
+      display: none;
+  }
+  .line-12 {
+    top: 440px;
+    visibility: hidden;
+      display: none;
+  }
+  .line-13 {
+    top: 480px;
+    visibility: hidden;
+      display: none;
+  }
+}
+@media (min-width:500px) {
+  .container{
+    width: 470px;
+    height: 400px;
+    font-size: 17px;
+    margin: 50px auto;
+  }
+  .verticalline {
+    height: 370px;
+    left: 370px;
+  }
+  .display-result{
+    bottom: 10px;
+    left: 385px;
+  }
+  .startBtn {
+    top: 150px;
+    left: 100px;
+    width: 200px;
+    height: 45px;
+  }
+  .line-1 {
+    top: 0px;
+  }
+  .line-2 {
+    top: 40px;
+  }
+  .line-3 {
+    top: 80px;
+  }
+  .line-3 {
+    top: 120px;
+  }
+  .line-5 {
+    top: 160px;
+  }
+  .line-6 {
+    top: 200px;
+    visibility: visible;
+    display: block;
+  }
+  .line-7 {
+    top: 240px;
+    visibility: visible;
+    display: block;
+  }
+  .line-8 {
+    top: 280px;
+    visibility: visible;
+    display: block;
+  }
+  .line-9 {
+    top: 320px;
+    visibility: hidden;
+  }
+  .line-10 {
+    top: 360px;
+    visibility: hidden;
+  }
+  .line-11 {
+    top: 400px;
+    visibility: hidden;
+  }
+  .line-12 {
+    top: 440px;
+    visibility: hidden;
+  }
+  .line-13 {
+    top: 480px;
+    visibility: hidden;
+  }
+}
+@media (min-width:600px) {
+  .container{
+    width: 580px;
+    height: 440px;
+    font-size: 17px;
+  }
+  .verticalline {
+    height: 400px;
+    left: 480px;
+  }
+  .display-result{
+    bottom: 10px;
+    left: 500px;
+  }
+  .startBtn {
+    top: 180px;
+    left: 145px;
+    width: 200px;
+    height: 45px;
+  }
+  .line-1 {
+    top: 0px;
+  }
+  .line-2 {
+    top: 40px;
+  }
+  .line-3 {
+    top: 80px;
+  }
+  .line-3 {
+    top: 120px;
+  }
+  .line-5 {
+    top: 160px;
+  }
+  .line-6 {
+    top: 200px;
+  }
+  .line-7 {
+    top: 240px;
+  }
+  .line-8 {
+    top: 280px;
+  }
+  .line-9 {
+    top: 320px;
+    visibility: visible;
+    display: block;
+  }
+  .line-10 {
+    top: 360px;
+    visibility: hidden;
+  }
+  .line-11 {
+    top: 400px;
+    visibility: hidden;
+  }
+  .line-12 {
+    top: 440px;
+    visibility: hidden;
+  }
+  .line-13 {
+    top: 480px;
+    visibility: hidden;
+  }
+}
+@media (min-width:768px) {
+  .container {
+    width: 730px;
+    height: 440px;
+    font-size: 17px;
+  }
+  .verticalline {
+    height: 400px;
+    left: 630px;
+  }
+  .display-result{
+    bottom: 10px;
+    left: 625px;
+  }
+  .startBtn {
+    top: 160px;
+    left: 230px;
+    width: 220px;
+    height: 50px;
+  }
+  .line-1 {
+    top: 0px;
+  }
+  .line-2 {
+    top: 40px;
+  }
+  .line-3 {
+    top: 80px;
+  }
+  .line-3 {
+    top: 120px;
+  }
+  .line-5 {
+    top: 160px;
+  }
+  .line-6 {
+    top: 200px;
+  }
+  .line-7 {
+    top: 240px;
+  }
+  .line-8 {
+    top: 280px;
+  }
+  .line-9 {
+    top: 320px;
+  }
+  .line-10 {
+    top: 360px;
+    visibility: hidden;
+  }
+  .line-11 {
+    top: 400px;
+    visibility: hidden;
+  }
+  .line-12 {
+    top: 440px;
+    visibility: hidden;
+  }
+  .line-13 {
+    top: 480px;
+    visibility: hidden;
+  }
+}
+@media (min-width:992px){
+  .container {
+    width: 850px;
+    height: 500px;
+    font-size: 18px;
+  }
+  .startBtn {
+    top: 190px;
+    left: 260px;
+  }
+  .verticalline {
+    height: 460px;
+    left: 720px;
+  }
+  .display-result{
+    bottom: 10px;
+    left: 750px;
+  }
+  .typing-line {
+    height: 35px;
+  }
+  .main-input {
+    height: 35px;
+    font-size: 25px;
+  }
+  .line-1 {
+    top: 0px;
+  }
+  .line-2 {
+    top: 35px;
+  }
+  .line-3 {
+    top: 70px;
+  }
+  .line-3 {
+    top: 105px;
+  }
+  .line-5 {
+    top: 140px;
+  }
+  .line-6 {
+    top: 175px;
+  }
+  .line-7 {
+    top: 210px;
+  }
+  .line-8 {
+    top: 245px;
+  }
+  .line-9 {
+    top: 280px;
+  }
+  .line-10 {
+    top: 315px;
+    visibility: visible;
+    display: block;
+  }
+  .line-11 {
+    top: 350px;
+    visibility: visible;
+    display: block;
+  }
+  .line-12 {
+    top: 385px;
+    visibility: visible;
+    display: block;
+  }
+}
+@media (min-width:1200px){
+  .container {
+    width: 1000px;
+    height: 600px;
+    font-size: 20px;
+  }
+  .startBtn {
+    top: 240px;
+    left: 320px;
+  }
+  .display-result {
+    bottom: 15px;
+    left: 900px;
+  }
+  .typing-line {
+    height: 40px;
+  }
+  .main-input {
+    height: 40px;
+    font-size: 30px;
+  }
+  .verticalline {
+    height: 550px;
+    left: 850px;
+  }
+  .line-1 {
+    top: 0px;
+  }
+  .line-2 {
+    top: 40px;
+  }
+  .line-3 {
+    top: 80px;
+  }
+  .line-3 {
+    top: 120px;
+  }
+  .line-5 {
+    top: 160px;
+  }
+  .line-6 {
+    top: 200px;
+  }
+  .line-7 {
+    top: 240px;
+  }
+  .line-8 {
+    top: 280px;
+  }
+  .line-9 {
+    top: 320px;
+  }
+  .line-10 {
+    top: 360px;
+  }
+  .line-11 {
+    top: 400px;
+  }
+  .line-12 {
+    top: 440px;
+  }
+  .line-13 {
+    top: 480px;
+  visibility: visible;
+  display: block;
+  }
+}
