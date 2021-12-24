@@ -6,14 +6,14 @@ body,html {
   width: 100%;
 }
 body {
-  background-image: url(bkg.jpg);
+  background-image: url(../img/bkg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Rubik', sans-serif;
 }
 body {
-  background-image: url(bkg.jpg);
+  background-image: url(../img/bkg.jpg);
   animation: 1s forwards num;
   transform: scale(0);
 }
